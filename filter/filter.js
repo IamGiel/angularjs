@@ -21,4 +21,5 @@ var app = angular
             }
         ];
         $scope.Employees = Employees;
+        $scope.rowLimit = 3;
     })

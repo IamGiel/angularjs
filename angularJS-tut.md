@@ -16,3 +16,5 @@ ANGULAR JS Notes
 
 6.   <a href="https://www.youtube.com/watch?v=30b1xWY9JIM"> Three Types of data Binding</a>
 
+7.   <a href="https://www.youtube.com/watch?v=7-ahq_hxWQo"> Communicate to server: AngularJS 22:40</a>
+

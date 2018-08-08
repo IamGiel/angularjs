@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="./filter.js"></script>
+</head>
+
+<body ng-app='myModule'>
+    <div ng-controller='myController'>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name: </th>
+                    <th>DOB: </th>
+                    <th>Gender: </th>
+                    <th>Salary: </th>
+                    <th>Salary: </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="emp in Employees">
+                    <td>{{emp.name | uppercase }}</td>
+                    <td>{{emp.dateOfBirth}}</td>
+                    <td>{{emp.gender | lowercase }}</td>
+                    <td>{{emp.salary | number:2 }}</td>
+                    <td>{{emp.salary | currency:"£" }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

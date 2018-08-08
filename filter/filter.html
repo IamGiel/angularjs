@@ -27,7 +27,7 @@
                 <tr ng-repeat="emp in Employees | limitTo:rowLimit">
                     <td>{{emp.name | uppercase }}</td>
                     <td>{{emp.dateOfBirth}}</td>
-                    <td>{{emp.gender | lowercase }}</td>
+                    <td>{{emp.gender | gender }}</td>
                     <td>{{emp.salary | number:2 }}</td>
                     <td>{{emp.salary | currency:"£" }}</td>
                 </tr>

@@ -2,18 +2,7 @@
 
 var app = angular
     .module('myModule', [])
-    .filter('gender', function () {
-        return function (gender) {
-            switch (gender) {
-                case 1:
-                    return 'Male';
-                case 2:
-                    return 'Female';
-                case 3:
-                    return 'Not Disclosed';
-            }
-        }
-    })
+
     .controller('myController', function ($scope) {
         var Employees = [{
                 name: 'John',
